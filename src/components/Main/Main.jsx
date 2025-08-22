@@ -12,10 +12,10 @@ function Main() {
   ];
 
   return (
-    <main class="main">
-      <div class="container">
-        <div class="main__block">
-          <div class="main__content">
+    <main className="main">
+      <div className="container">
+        <div className="main__block">
+          <div className="main__content">
             {statusArr.map((elementStatus, index) => {
               return (
                 <Column titleStatus={elementStatus} key={index}>

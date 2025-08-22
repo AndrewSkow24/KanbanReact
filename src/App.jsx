@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div class="wrapper">
+      <div className="wrapper">
         <PopUser />
         <PopNewCard />
         <PopBrowse />
