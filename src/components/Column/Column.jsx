@@ -1,13 +1,19 @@
 import Card from "../Card/Card";
+import {
+  SMainColumn,
+  SColumnTitle,
+  SColumnTitleP,
+  SCards,
+} from "./Column.styled";
 
 const Column = ({ titleStatus, children }) => {
   return (
-    <div className="main__column">
-      <div className="column__title">
-        <p>{titleStatus}</p>
-      </div>
-      <div className="cards">{children}</div>
-    </div>
+    <SMainColumn>
+      <SColumnTitle>
+        <SColumnTitleP>{titleStatus}</SColumnTitleP>
+      </SColumnTitle>
+      <SCards>{children}</SCards>
+    </SMainColumn>
   );
 };
 
