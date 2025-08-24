@@ -1,6 +1,8 @@
 import Column from "../Column/Column";
 import Card from "../Card/Card";
 import { cardList } from "../../data";
+import { SContainer } from "../Container/Container.styled";
+import { SMain, SMainBlock, SMainContent } from "../Main/Main.styled";
 
 function Main() {
   const statusArr = [
@@ -12,10 +14,10 @@ function Main() {
   ];
 
   return (
-    <main className="main">
-      <div className="container">
-        <div className="main__block">
-          <div className="main__content">
+    <SMain>
+      <SContainer>
+        <SMainBlock>
+          <SMainContent>
             {statusArr.map((elementStatus, index) => {
               return (
                 <Column titleStatus={elementStatus} key={index}>
@@ -34,10 +36,10 @@ function Main() {
                 </Column>
               );
             })}
-          </div>
-        </div>
-      </div>
-    </main>
+          </SMainContent>
+        </SMainBlock>
+      </SContainer>
+    </SMain>
   );
 }
 

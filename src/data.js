@@ -1,5 +1,5 @@
 const topics = ["Web Design", "Research", "Copywriting"];
-export const cardTheme = {
+export const cardThemeArr = {
   "Web Design": "_orange",
   Research: "_green",
   Copywriting: "_purple",

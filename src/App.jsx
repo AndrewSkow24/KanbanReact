@@ -7,6 +7,7 @@ import PopNewCard from "./components/PopNewCard/PopNewCard";
 import PopUser from "./components/PopUser/PopUser";
 import Loader from "./components/Loader/Loader";
 import { SWrapper } from "./components/Wrapper/Wrapper.styled";
+import { GlobalStyle } from "./components/GlobalStyle/GlobalStyle";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,13 +19,16 @@ function App() {
   }, []);
 
   return (
-    <SWrapper>
-      <PopUser />
-      <PopNewCard />
-      <PopBrowse />
-      <Header />
-      {loading ? <Loader /> : <Main />}
-    </SWrapper>
+    <>
+      <GlobalStyle />
+      <SWrapper>
+        <PopUser />
+        <PopNewCard />
+        <PopBrowse />
+        <Header />
+        {loading ? <Loader /> : <Main />}
+      </SWrapper>
+    </>
   );
 }
 

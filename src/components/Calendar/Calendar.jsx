@@ -1,53 +1,73 @@
+import {
+  SCalendarContent,
+  SCalendarDaysNames,
+  SCalendarDayName,
+  SCalendarDayNameWeekend,
+  SCalendarCells,
+  SCalendarCellOtherMonth,
+  SCalendarCellDay,
+  SCurrentDay,
+  SCalendarCellDayWeekend,
+} from "./Calendar.styled";
+
 const Calendar = () => {
   return (
-    <div className="calendar__content">
-      <div className="calendar__days-names">
-        <div className="calendar__day-name">пн</div>
-        <div className="calendar__day-name">вт</div>
-        <div className="calendar__day-name">ср</div>
-        <div className="calendar__day-name">чт</div>
-        <div className="calendar__day-name">пт</div>
-        <div className="calendar__day-name -weekend-">сб</div>
-        <div className="calendar__day-name -weekend-">вс</div>
-      </div>
-      <div className="calendar__cells">
-        <div className="calendar__cell _other-month">28</div>
-        <div className="calendar__cell _other-month">29</div>
-        <div className="calendar__cell _other-month">30</div>
-        <div className="calendar__cell _cell-day">31</div>
-        <div className="calendar__cell _cell-day">1</div>
-        <div className="calendar__cell _cell-day _weekend">2</div>
-        <div className="calendar__cell _cell-day _weekend">3</div>
-        <div className="calendar__cell _cell-day">4</div>
-        <div className="calendar__cell _cell-day">5</div>
-        <div className="calendar__cell _cell-day ">6</div>
-        <div className="calendar__cell _cell-day">7</div>
-        <div className="calendar__cell _cell-day _current">8</div>
-        <div className="calendar__cell _cell-day _weekend">9</div>
-        <div className="calendar__cell _cell-day _weekend">10</div>
-        <div className="calendar__cell _cell-day">11</div>
-        <div className="calendar__cell _cell-day">12</div>
-        <div className="calendar__cell _cell-day">13</div>
-        <div className="calendar__cell _cell-day">14</div>
-        <div className="calendar__cell _cell-day">15</div>
-        <div className="calendar__cell _cell-day _weekend">16</div>
-        <div className="calendar__cell _cell-day _weekend">17</div>
-        <div className="calendar__cell _cell-day">18</div>
-        <div className="calendar__cell _cell-day">19</div>
-        <div className="calendar__cell _cell-day">20</div>
-        <div className="calendar__cell _cell-day">21</div>
-        <div className="calendar__cell _cell-day">22</div>
-        <div className="calendar__cell _cell-day _weekend">23</div>
-        <div className="calendar__cell _cell-day _weekend">24</div>
-        <div className="calendar__cell _cell-day">25</div>
-        <div className="calendar__cell _cell-day">26</div>
-        <div className="calendar__cell _cell-day">27</div>
-        <div className="calendar__cell _cell-day">28</div>
-        <div className="calendar__cell _cell-day">29</div>
-        <div className="calendar__cell _cell-day _weekend">30</div>
-        <div className="calendar__cell _other-month _weekend">1</div>
-      </div>
-    </div>
+    <SCalendarContent>
+      <SCalendarDaysNames>
+        <SCalendarDayName>пн</SCalendarDayName>
+        <SCalendarDayName>вт</SCalendarDayName>
+        <SCalendarDayName>ср</SCalendarDayName>
+        <SCalendarDayName>чт</SCalendarDayName>
+        <SCalendarDayName>пт</SCalendarDayName>
+        <SCalendarDayNameWeekend>сб</SCalendarDayNameWeekend>
+        <SCalendarDayNameWeekend>вс</SCalendarDayNameWeekend>
+      </SCalendarDaysNames>
+      <SCalendarCells>
+        <SCalendarCellOtherMonth>28</SCalendarCellOtherMonth>
+        <SCalendarCellOtherMonth>29</SCalendarCellOtherMonth>
+        <SCalendarCellOtherMonth>30</SCalendarCellOtherMonth>
+        <SCalendarCellOtherMonth>31</SCalendarCellOtherMonth>
+        <SCalendarCellDay>1</SCalendarCellDay>
+
+        <SCalendarCellDayWeekend>2</SCalendarCellDayWeekend>
+        <SCalendarCellDayWeekend>3</SCalendarCellDayWeekend>
+
+        <SCalendarCellDay>4</SCalendarCellDay>
+        <SCalendarCellDay>5</SCalendarCellDay>
+        <SCalendarCellDay>6</SCalendarCellDay>
+        <SCalendarCellDay>7</SCalendarCellDay>
+
+        <SCurrentDay>8</SCurrentDay>
+        <SCalendarCellDayWeekend>9</SCalendarCellDayWeekend>
+        <SCalendarCellDayWeekend>10</SCalendarCellDayWeekend>
+
+        <SCalendarCellDay>11</SCalendarCellDay>
+        <SCalendarCellDay>12</SCalendarCellDay>
+        <SCalendarCellDay>13</SCalendarCellDay>
+        <SCalendarCellDay>14</SCalendarCellDay>
+        <SCalendarCellDay>15</SCalendarCellDay>
+
+        <SCalendarCellDayWeekend>16</SCalendarCellDayWeekend>
+        <SCalendarCellDayWeekend>17</SCalendarCellDayWeekend>
+
+        <SCalendarCellDay>18</SCalendarCellDay>
+        <SCalendarCellDay>19</SCalendarCellDay>
+        <SCalendarCellDay>20</SCalendarCellDay>
+        <SCalendarCellDay>21</SCalendarCellDay>
+        <SCalendarCellDay>22</SCalendarCellDay>
+
+        <SCalendarCellDayWeekend>23</SCalendarCellDayWeekend>
+        <SCalendarCellDayWeekend>24</SCalendarCellDayWeekend>
+        <SCalendarCellDay>25</SCalendarCellDay>
+        <SCalendarCellDay>26</SCalendarCellDay>
+        <SCalendarCellDay>27</SCalendarCellDay>
+        <SCalendarCellDay>28</SCalendarCellDay>
+        <SCalendarCellDay>29</SCalendarCellDay>
+        <SCalendarCellDayWeekend>30</SCalendarCellDayWeekend>
+
+        <SCalendarCellOtherMonth>1</SCalendarCellOtherMonth>
+      </SCalendarCells>
+    </SCalendarContent>
   );
 };
 

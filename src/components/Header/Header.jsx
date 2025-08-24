@@ -5,6 +5,11 @@ import {
   SHeaderBlock,
   SHeaderNav,
   SHeaderLogo,
+  SHeaderLogoDark,
+  SHeaderUserHover02,
+  SHeaderBtnMainNew,
+  SHeaderBtnMainNewHover01,
+  SHeaderBtnMainNewA,
 } from "./Header.styled";
 import { SContainer } from "../Container/Container.styled";
 
@@ -22,27 +27,22 @@ const Header = () => {
     <SHeader>
       <SContainer>
         <SHeaderBlock>
-          <div className="header__logo _show _light">
-            <a href="" target="_self">
-              <img src="/logo.png" alt="logo" />
-            </a>
-          </div>
-          <div className="header__logo _dark">
-            <a href="" target="_self">
-              <img src="/logo_dark.png" alt="logo" />
-            </a>
-          </div>
+          <a href="" target="_self">
+            <SHeaderLogo src="/logo.png" alt="logo" />
+          </a>
+
+          <a href="" target="_self">
+            <SHeaderLogoDark src="/logo_dark.png" alt="logo" />
+          </a>
           <SHeaderNav>
-            <button className="header__btn-main-new _hover01" id="btnMainNew">
-              <a href="#popNewCard">Создать новую задачу</a>
-            </button>
-            <a
-              href="#"
-              className="header__user _hover02"
-              onClick={handleUserClick}
-            >
+            <SHeaderBtnMainNewHover01 id="btnMainNew">
+              <SHeaderBtnMainNewA href="#popNewCard">
+                Создать новую задачу
+              </SHeaderBtnMainNewA>
+            </SHeaderBtnMainNewHover01>
+            <SHeaderUserHover02 href="#" onClick={handleUserClick}>
               Иван Ванов
-            </a>
+            </SHeaderUserHover02>
 
             <UserInfoModal isOpen={isOpenModal} />
           </SHeaderNav>
